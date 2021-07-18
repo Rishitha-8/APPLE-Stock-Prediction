@@ -93,7 +93,7 @@ elif model_type=='Neural Network':
                 st.write("percentage decrease = ",round(((- (diff)/lst_output[num_days.days-2][0])*100),4))
             else:
                 st.write("percentage increase = ",round((( (diff)/lst_output[num_days.days-2][0])*100),4))
-            #st.line_chart(lst_output)
+            st.line_chart(lst_output)
     else:
         st.error('Error: End date must fall after start date.')
 else:
