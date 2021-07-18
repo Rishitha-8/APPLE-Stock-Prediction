@@ -50,7 +50,6 @@ if model_type=='Linear Regression':
 elif model_type=='Neural Network':
     stock_data = pd.read_csv(
     "Stock_Data_with_vader.csv", parse_dates=["Date"], index_col="Date")
-    st.markdown("<br>", unsafe_allow_html=True)
     st.title("APPLE-STOCK PREDICTION USING NEURAL NETWORK ")
     html_temp = """
     <div style="background-color:pink;padding:10px">
