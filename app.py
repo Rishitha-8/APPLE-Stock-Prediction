@@ -30,7 +30,7 @@ if model_type=='Linear Regression':
         print(prediction)
         return prediction
     def main():
-       st.title("STOCK PREDICTION USING LINEAR REGRESSION ")
+       st.title("APPLE STOCK PREDICTION USING LINEAR REGRESSION ")
        html_temp = """
        <div style="background-color:teal;padding:10px">
        <h2 style="color:white;text-align:center;">Stock Prediction Using Streamlit </h2>
@@ -104,7 +104,7 @@ else:
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("<br>", unsafe_allow_html=True)
-    st.markdown("<h1 style='color:black';'text-align: center; color: black;'>STOCK PREDICTION USING LINEAR REGRESSION and NEURAL NETWORK</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color:black';'text-align: center; color: black;'>APPLE STOCK PREDICTION USING LINEAR REGRESSION and NEURAL NETWORK</h1>", unsafe_allow_html=True)
 
   
     
