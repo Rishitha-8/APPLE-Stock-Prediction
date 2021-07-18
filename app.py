@@ -50,6 +50,12 @@ if model_type=='Linear Regression':
 elif model_type=='Neural Network':
     stock_data = pd.read_csv(
     "Stock_Data_with_vader.csv", parse_dates=["Date"], index_col="Date")
+    st.title("APPLE STOCK PREDICTION USING NEURAL NETWORK ")
+    html_temp = """
+    <div style="background-color:teal;padding:10px">
+    <h2 style="color:white;text-align:center;">Stock Prediction Using Streamlit </h2>
+    </div>
+     """
     x_input = stock_data['Close/Last']
     days = len(x_input)-20 
     x_input = x_input[days:]
