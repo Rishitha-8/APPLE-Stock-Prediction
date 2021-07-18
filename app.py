@@ -104,7 +104,7 @@ else:
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("<br>", unsafe_allow_html=True)
-    st.markdown("<h1 style='color:white';'text-align: center; color: black;'>STOCK PREDICTION USING LINEAR REGRESSION and NEURAL NETWORK</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color:black';'text-align: center; color: black;'>STOCK PREDICTION USING LINEAR REGRESSION and NEURAL NETWORK</h1>", unsafe_allow_html=True)
 
   
     
