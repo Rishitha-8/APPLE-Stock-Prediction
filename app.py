@@ -30,7 +30,7 @@ if model_type=='Linear Regression':
         print(prediction)
         return prediction
     def main():
-       st.title("APPLE STOCK PREDICTION USING LINEAR REGRESSION ")
+       st.title("APPLE-STOCK PREDICTION USING LINEAR REGRESSION ")
        html_temp = """
        <div style="background-color:teal;padding:10px">
        <h2 style="color:white;text-align:center;">Stock Prediction Using Streamlit </h2>
@@ -50,9 +50,9 @@ if model_type=='Linear Regression':
 elif model_type=='Neural Network':
     stock_data = pd.read_csv(
     "Stock_Data_with_vader.csv", parse_dates=["Date"], index_col="Date")
-    st.title("APPLE STOCK PREDICTION USING NEURAL NETWORK ")
+    st.title("APPLE-STOCK PREDICTION USING NEURAL NETWORK ")
     html_temp = """
-    <div style="background-color:teal;padding:10px">
+    <div style="background-color:pink;padding:10px">
     <h2 style="color:white;text-align:center;">Stock Prediction Using Streamlit </h2>
     </div>
      """
