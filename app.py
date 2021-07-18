@@ -21,7 +21,7 @@ import pickle
 
 model_type=st.sidebar.selectbox(label='Select the Model', options=['Select the Model','Linear Regression' ,'Neural Network'])
 if model_type=='Linear Regression':
-    pickle_in=open(r"C:\Users\NiruSai\Stock-price-prediction-TeamB-main\classifier.pkl","rb")
+    pickle_in=open("classifier.pkl","rb")
     model=pickle.load(pickle_in)
     def welcome():
         return "Welcome All"
@@ -49,7 +49,7 @@ if model_type=='Linear Regression':
         main()
 elif model_type=='Neural Network':
     stock_data = pd.read_csv(
-    "D:\downloads\Stock-price-prediction-TeamB-main\Datasets\Stock_Data_with_vader.csv", parse_dates=["Date"], index_col="Date")
+    "Stock_Data_with_vader.csv", parse_dates=["Date"], index_col="Date")
     x_input = stock_data['Close/Last']
     days = len(x_input)-20 
     x_input = x_input[days:]
@@ -68,7 +68,7 @@ elif model_type=='Neural Network':
             n_steps=20
             num_days=end_date-today
             i=0
-            model = keras.models.load_model("D:\\downloads\\20daysprediction.h5")
+            model = keras.models.load_model("20daysprediction.h5")
             while(i<num_days.days):
                 if(len(temp_input)>20):
                     x_input=np.array(temp_input[1:])
